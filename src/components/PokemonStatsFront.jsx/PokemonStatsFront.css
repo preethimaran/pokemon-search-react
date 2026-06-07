@@ -1,0 +1,12 @@
+.stats-column-front {
+	display: grid;
+	grid-template-columns: 0.75fr 0.25fr;
+}
+
+.headings {
+	text-align: left;
+}
+
+.value {
+	text-align: right;
+}

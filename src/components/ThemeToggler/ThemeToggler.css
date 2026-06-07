@@ -1,0 +1,31 @@
+[data-theme="light"] {
+	--hover-color: rgba(0, 0, 0, 0.06); /* very subtle dark tint */
+}
+
+[data-theme="dark"] {
+	--hover-color: rgba(255, 255, 255, 0.06); /* very subtle dark tint */
+}
+
+.ThemeToggler {
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	/* margin-left: 5px; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--bg);
+	color: var(--text);
+	gap: 5px;
+}
+
+/* .ThemeToggler:hover {
+	background-color: #d3d3d3;
+	background-color: var(--hover-color);
+} */
+
+@media (max-width: 768px) {
+	.ThemeToggler {
+		justify-content: center;
+	}
+}

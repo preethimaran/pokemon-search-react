@@ -1,0 +1,16 @@
+.GetPokemonButton {
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--bg);
+	color: var(--text);
+	gap: 5px;
+}
+
+@media (max-width: 768px) {
+	.GetPokemonButton {
+		justify-content: center;
+	}
+}

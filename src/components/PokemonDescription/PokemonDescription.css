@@ -1,0 +1,24 @@
+.PokemonDescription {
+	font-family: "Jersey 10", sans-serif;
+}
+
+.PokemonDescription h1,
+.PokemonDescription h2,
+.PokemonDescription h3,
+.PokemonDescription p {
+	text-align: left;
+}
+
+.Header {
+	margin-bottom: 20px;
+}
+
+.Abilities {
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.BasicInfo {
+	padding: 10px;
+}
