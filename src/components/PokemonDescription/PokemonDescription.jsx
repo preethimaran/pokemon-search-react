@@ -7,7 +7,7 @@ import GenderIcon from "../GenderIcon/GenderIcon";
 export default function PokemonDescription() {
 	const { details, pokemon } = usePokemon();
 	const name = details.name;
-	const capitalisedName = capitalise(name);
+	// const capitalisedName = capitalise(name);
 	const description =
 		details?.flavor_text_entries.find((item) => item?.language?.name === "en")
 			?.flavor_text || "No Description Found";
@@ -59,7 +59,7 @@ export default function PokemonDescription() {
 						alignItems: "flex-start",
 					}}
 				>
-					<h1 style={{ marginBottom: "12px" }}>{capitalisedName}</h1>
+					<h1 style={{ marginBottom: "12px" }}>{name}</h1>
 					<h2>{types}</h2>
 				</div>
 				<h2>{cleaned_description}</h2>

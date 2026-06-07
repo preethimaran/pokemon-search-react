@@ -1,29 +1,15 @@
-.PokemonArea.flipped {
-	display: flex;
-	width: 100%;
-	box-sizing: border-box;
-	justify-content: center;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
-.PokemonArea.flipped {
+.PokemonArea {
 	display: grid;
-	grid-template-columns: 0.25fr 0.75fr;
-	width: 100%;
-	column-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 50px;
 	box-sizing: border-box;
 	justify-content: center;
 	padding-left: 100px;
 	padding-right: 100px;
-}
-
-.stats-row {
-	grid-column: 1 / -1;
 }
 
 @media (max-width: 768px) {
-	.PokemonArea.flipped {
+	.PokemonArea {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

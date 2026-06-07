@@ -8,9 +8,9 @@ import "./PokemonArea.css";
 export default function PokemonArea({ children }) {
 	const { isFront } = useCardContext();
 	return (
-		<div className={`PokemonArea${isFront ? "" : " flipped"}`}>
+		<div className="PokemonArea">
 			<PokemonCard />
-			{!isFront && <PokemonDescription />}
+			<PokemonDescription />
 		</div>
 	);
 }
