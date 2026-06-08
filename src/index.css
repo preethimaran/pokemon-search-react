@@ -1,6 +1,7 @@
+@import "tailwindcss";
 :root {
-	--text: #6b6375;
-	--text-h: #08060d;
+	--text-l: #6b6375;
+	--text: "black";
 	--bg: #fff;
 	--navbar: #edce5e;
 	--color-inside: var(--text);
@@ -37,9 +38,9 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--text: #9ca3af;
-		--text-h: #f3f4f6;
-		--bg: #16171d;
+		--text-l: #6b6375;
+		--text: "white";
+		--bg: "black";
 		--border: #2e303a;
 		--code-bg: #1f2028;
 		--accent: #c084fc;
@@ -56,8 +57,8 @@
 }
 
 [data-theme="light"] {
-	--text: #6b6375;
-	--text-h: #6b6375;
+	--text-l: #6b6375;
+	--text: "black";
 	--bg: #fff;
 	--shadow-opacity-a: 0.4;
 	--shadow-opacity-b: 0.2;
@@ -72,9 +73,9 @@
 }
 
 [data-theme="dark"] {
-	--text: #e0dfe4;
-	--text-h: #e0dfe4;
-	--bg: #121017;
+	--text-l: #6b6375;
+	--text: "white";
+	--bg: "black";
 	--shadow-rgb: 255, 255, 255;
 	--shadow-opacity-a: 0.2;
 	--shadow-opacity-b: 0.2;
@@ -90,6 +91,7 @@
 
 body {
 	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 
 #root {
@@ -148,25 +150,4 @@ code {
 	line-height: 135%;
 	padding: 4px 8px;
 	background: var(--code-bg);
-}
-
-.pixelify-sans-light {
-	font-family: "Pixelify Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.pixelify-sans-mid {
-	font-family: "Pixelify Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 550;
-	font-style: normal;
-}
-
-.pixelify-sans-dark {
-	font-family: "Pixelify Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
 }

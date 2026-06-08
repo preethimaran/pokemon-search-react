@@ -8,8 +8,8 @@
 
 .ThemeToggler {
 	outline: none;
-	border: none;
-	border-radius: 10px;
+	border: 1px solid --var(--text-l);
+	border-radius: 5px;
 	/* margin-left: 5px; */
 	display: flex;
 	flex-direction: row;

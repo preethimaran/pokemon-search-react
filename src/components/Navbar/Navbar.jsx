@@ -1,13 +1,14 @@
 import GetPokemonButton from "../GetPokemonButton/GetPokemonButton";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
+import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
 import "./Navbar.css";
 
 export default function Navbar() {
 	return (
-		<div className="Navbar">
+		<div className="Navbar shadow-sm">
 			<ThemeToggler />
 			<GetPokemonButton />
-			<div className="pixelify-sans-light">Pokemon</div>
+			<WebsiteLogo />
 		</div>
 	);
 }

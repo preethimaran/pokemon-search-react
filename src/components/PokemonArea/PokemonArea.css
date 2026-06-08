@@ -4,8 +4,8 @@
 	column-gap: 50px;
 	box-sizing: border-box;
 	justify-content: center;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: min(100px, 5%);
+	padding-right: min(100px, 5%);
 }
 
 @media (max-width: 768px) {
