@@ -1,0 +1,28 @@
+.search-field {
+	border: none;
+	outline: none;
+}
+
+.search-field:focus {
+	box-shadow: 0 0 0 2px transparent; /* effectively invisible but keeps structure */
+}
+
+div.search-container {
+	border: 1px solid #e5e7eb;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.search-container input {
+	font-size: 1rem;
+}
+
+.search-icon {
+	margin-left: auto;
+}
+
+[data-theme="dark"] div.search-container {
+	border: 1px solid #2e3448;
+}
