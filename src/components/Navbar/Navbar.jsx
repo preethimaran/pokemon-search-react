@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
 	return (
-		<div className="Navbar shadow-sm">
+		<div className="Navbar">
 			<ThemeToggler />
 			<GetPokemonButton />
 			<WebsiteLogo />

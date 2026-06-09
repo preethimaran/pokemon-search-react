@@ -10,9 +10,9 @@ export default function CardBack() {
 		pokemon.sprites?.other?.["official-artwork"]?.front_default ||
 		pokemon?.sprites?.front_default;
 	const styles = {
-		width: "auto",
-		height: "100%",
-		objectFit: "contain",
+		maxWidth: "100%",
+		height: "auto",
+		objectfit: "contain",
 	};
 
 	const digit = (i) => {
@@ -37,6 +37,7 @@ export default function CardBack() {
 			style={{
 				display: "flex",
 				flexDirection: "column",
+				width: "100%",
 				height: "100%",
 				borderRadius: "25px",
 				padding: "25px",

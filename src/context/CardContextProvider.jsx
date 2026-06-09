@@ -5,7 +5,7 @@ const CardContext = createContext();
 export const useCardContext = () => useContext(CardContext);
 
 export function CardContextProvider({ children }) {
-	const [isFront, setIsFront] = useState(true);
+	const [isFront, setIsFront] = useState(false);
 
 	const turnCard = () => {
 		setIsFront((oldValue) => !oldValue);

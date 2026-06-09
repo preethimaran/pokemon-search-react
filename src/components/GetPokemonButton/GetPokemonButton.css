@@ -1,12 +1,13 @@
 .GetPokemonButton {
-	border-radius: 10px;
-	border: none;
+	border-radius: 8px;
+	border: 1px solid #7c3aed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: var(--bg);
-	color: var(--text);
 	gap: 5px;
+	background-color: #7c3aed;
+	padding: 10px;
+	color: white;
 }
 
 @media (max-width: 768px) {

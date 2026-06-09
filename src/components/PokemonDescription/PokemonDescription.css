@@ -7,6 +7,7 @@
 
 .PokemonDescription {
 	padding-top: 25px;
+	color: var(--text);
 }
 
 .Header {
@@ -31,7 +32,7 @@ p.value {
 	grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1204px) {
+@media (max-width: 1100px) {
 	.content {
 		display: flex;
 		flex-direction: column;
