@@ -13,8 +13,9 @@ export function PokemonContextProvider({ children }) {
 	const [pokemon, setPokemon] = useState({});
 	const [details, setDetails] = useState({});
 
-	async function getUrl() {
-		const id = RandomNumber(1025);
+	async function getUrl(nameId) {
+		const id = nameId ? nameId : RandomNumber(1025);
+
 		const url = `${BASE_URL}${id}/`;
 		const url2 = `${BASE_DETAILS}${id}/`;
 
