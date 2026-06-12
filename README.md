@@ -5,6 +5,7 @@ A sleek, responsive Pokemon encyclopedia built with React and Tailwind CSS, powe
 ## 🔗 Live Demo
 
 [View the live site](https://pokemon-search-react-mu.vercel.app/)
+
 <img width="1150" height="591" alt="pokedex" src="https://github.com/user-attachments/assets/c96afeb5-7475-49b3-9563-f3b737c50596" />
 
 
