@@ -7,6 +7,14 @@
 	box-shadow: 0 0 0 2px transparent; /* effectively invisible but keeps structure */
 }
 
+.search-field::placeholder {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+[data-theme="dark"] .search-field::placeholder {
+	color: #a5a8b2;
+}
+
 #search-container {
 	border: 1px solid #e5e7eb;
 	border-radius: 8px;

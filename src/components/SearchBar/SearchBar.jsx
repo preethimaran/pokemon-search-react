@@ -73,6 +73,7 @@ export default function SearchBar() {
 							setSearchTerm("");
 							setSearchTerm(e.target.value);
 						}}
+						placeholder="Enter name or id"
 					/>
 				</form>
 
