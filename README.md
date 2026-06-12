@@ -1,16 +1,49 @@
-# React + Vite
+# PokeDex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, responsive Pokemon encyclopedia built with React and Tailwind CSS, powered by the PokéAPI.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View the live site](https://pokemon-search-react-mu.vercel.app/)
+<img width="1150" height="591" alt="pokedex" src="https://github.com/user-attachments/assets/c96afeb5-7475-49b3-9563-f3b737c50596" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+PokéDex lets users instantly search for any Pokémon by name or ID, browse their base stats and types across a clean, responsive UI with light/dark mode support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Search by Pokémon name or ID
+- Autocomplete search suggestions
+- Random Pokémon generator
+- Base stats display
+- Light/dark theme toggle
+- Fully responsive design
+
+## Tech Stack
+
+- **React** — component-based UI
+- **Tailwind CSS** — utility-first styling
+- **PokéAPI** — data source
+
+## Getting Started
+
+```bash
+git clone https://github.com/preethimaran/pokemon-search-react.git
+cd pokemon-search-react
+npm install
+npm run dev
+```
+
+## Deployment
+
+Deployed on [Vercel](https://pokemon-search-react-mu.vercel.app/).
+
+## Author
+
+**Preethi Maran** · [GitHub](https://github.com/preethimaran)
+
+## Disclaimer
+
+This is a personal portfolio project built for demonstration purposes only. Pokémon and all related names are trademarks of Nintendo/Game Freak/The Pokémon Company. This project is not affiliated with, endorsed by, or connected to any official Pokémon product.
