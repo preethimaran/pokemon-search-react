@@ -5,8 +5,11 @@ import "./GetPokemonButton.css";
 export default function GetPokemonButton() {
 	const { getUrl } = usePokemon();
 	return (
-		<button className="GetPokemonButton pixelify-sans-light" onClick={getUrl}>
-			<BookSearch /> <h3>Get New Pokemon</h3>
+		<button
+			className="GetPokemonButton pixelify-sans-light"
+			onClick={() => getUrl()}
+		>
+			<BookSearch /> <h3>Surprise!</h3>
 		</button>
 	);
 }

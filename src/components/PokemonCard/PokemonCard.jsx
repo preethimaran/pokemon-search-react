@@ -11,16 +11,6 @@ export default function PokemonCard() {
 	const { isFront, turnCard } = useCardContext();
 
 	return (
-		// <div onClick={turnCard} className="PokemonCard">
-		// 	{isFront ? (
-		// 		<>
-		// 			<Pokemon />
-		// 			<PokemonStatsFront />
-		// 		</>
-		// 	) : (
-		// 		<Pokemon />
-		// 	)}
-		// </div>
 		<div className={`card-wrapper ${!isFront ? "flipped" : ""}`}>
 			<div
 				className={`PokemonCard ${!isFront ? "flipped" : ""}`}

@@ -1,33 +1,44 @@
 .Navbar {
-	background-color: var(--navbar);
 	display: flex;
 	width: 100%;
-	flex-direction: row-reverse;
-	margin-bottom: 50px;
-	padding: 10px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
 	box-sizing: border-box;
 	gap: 10px;
+	border-bottom: 2px solid #e5e7eb;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-.Navbar div {
+[data-theme="dark"] .Navbar {
+	border-bottom: 2px solid #242a3d;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.Navbar > div {
 	font-size: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: auto;
-	color: var(--bg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	.Navbar {
 		flex-direction: column;
+		align-items: stretch;
 	}
 
 	.Navbar button {
 		width: 100%;
 	}
 
-	.Navbar div {
+	.Navbar > div {
 		margin-right: 0px;
 		font-size: 2.5rem;
 		order: -1;
