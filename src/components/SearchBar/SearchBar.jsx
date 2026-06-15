@@ -100,7 +100,6 @@ export default function SearchBar() {
 								setSearchTerm("");
 								setSearchResults([]); // close dropdown
 								// navigate to that pokemon's page here if you want
-								getUrl(searchTerm);
 								//state updates are async so use pokemon name directly
 								getUrl(pokemon.name);
 							}}
