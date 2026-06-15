@@ -2,6 +2,7 @@ import { Search } from "lucide-react";
 import "./SearchBar.css";
 import { useState, useEffect } from "react";
 import { usePokemon } from "../../context/PokemonContextProvider";
+import Alert from "@mui/material/Alert";
 
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 
