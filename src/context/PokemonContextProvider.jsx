@@ -12,6 +12,7 @@ export function usePokemon() {
 export function PokemonContextProvider({ children }) {
 	const [pokemon, setPokemon] = useState({});
 	const [details, setDetails] = useState({});
+	const [error, setError] = useState("");
 
 	async function getUrl(nameId) {
 		const id = nameId ? nameId : RandomNumber(1025);
@@ -20,6 +21,16 @@ export function PokemonContextProvider({ children }) {
 		const url2 = `${BASE_DETAILS}${id}/`;
 
 		const response = await fetch(url);
+		if (response.status === 404) {
+			setError("Sorry unable to find a Pokemon with the entered Name or ID");
+			return;
+		}
+
+		if (!response.ok) {
+			setError("Something went wrong!");
+			return;
+		}
+		setError("");
 		const responseJson = await response.json();
 		setPokemon(responseJson);
 
@@ -28,12 +39,16 @@ export function PokemonContextProvider({ children }) {
 		setDetails(responseJson2);
 	}
 
+	const setErrorToNull = () => {
+		setError("");
+	};
+
 	useEffect(() => {
 		getUrl();
 	}, []);
 
 	return (
-		<PokemonContext value={{ pokemon, getUrl, details }}>
+		<PokemonContext value={{ pokemon, getUrl, details, error, setErrorToNull }}>
 			{children}
 		</PokemonContext>
 	);
