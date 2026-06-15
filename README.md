@@ -25,9 +25,11 @@ PokéDex lets users instantly search for any Pokémon by name or ID, browse thei
 
 ## Tech Stack
 
-- **React** — component-based UI
-- **Tailwind CSS** — utility-first styling
-- **PokéAPI** — data source
+- **React** - component-based UI
+- **Tailwind CSS** - utility-first styling
+- **Material UI** - prebuilt UI components
+- **Lucide React** - open source icon set
+- **PokéAPI** - data source
 
 ## Getting Started
 
