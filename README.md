@@ -21,6 +21,7 @@ PokéDex lets users instantly search for any Pokémon by name or ID, browse thei
 - Base stats display
 - Light/dark theme toggle
 - Fully responsive design
+- Alerts user when a Pokemon is not found
 
 ## Tech Stack
 
