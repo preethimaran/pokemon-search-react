@@ -43,7 +43,7 @@ export default function PokemonDescription() {
 		pokemon?.types
 			?.map((value) => value?.type?.name)
 			.map((value) => (
-				<Tag text={value} fgColor={"white"} bgColor={"#7C3AED"} />
+				<Tag text={value} key={uuid()} fgColor={"white"} bgColor={"#7C3AED"} />
 			)) || [];
 
 	const determineGender = (num) => {
@@ -75,7 +75,10 @@ export default function PokemonDescription() {
 					</div>
 				</div>
 			</div>
-			<p style={{ color: "var(--text-l)", marginBottom: "16px" }}>
+			<p
+				className="descrip"
+				style={{ color: "var(--text-l)", marginBottom: "16px" }}
+			>
 				{cleaned_description}
 			</p>
 			<div
@@ -124,7 +127,7 @@ export default function PokemonDescription() {
 							rowGap: "10px",
 						}}
 					>
-						<div style={{ display: "flex", flexDirection: "row", gap: "16px" }}>
+						<div style={{ display: "flex", flexDirection: "row", gap: "8px" }}>
 							<Ruler />
 							<p>Height</p>
 						</div>
@@ -144,7 +147,10 @@ export default function PokemonDescription() {
 					</div>
 				</div>
 
-				<div className="BasicInfo" style={{ gridColumn: "1 / -1" }}>
+				<div
+					className="BasicInfoStats BasicInfo"
+					style={{ gridColumn: "1 / -1" }}
+				>
 					<p className="text-2xl">Stats</p>
 					<div
 						className="mt-3"
